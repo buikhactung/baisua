@@ -1,11 +1,11 @@
 function convert(){
-    let inputA= (document.getElementById("Money").value);
+    let inputA =parseFloat(document.getElementById("Money").value);
     let from = document.getElementById("From").value;
     let to = document.getElementById( "To").value;
-    alert(to);
+
     if(from == "VND" && to == "USD"){
        let inputB = (inputA/23000);
-       alert(inputB);
+       let result = document.getElementById("result").innerHTML = "Kết quả: " + inputB + "VND";
     }else if(from == "USD" && to == "VND"){
         let inputB = (inputA*23000);
         alert(inputB);
